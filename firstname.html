@@ -1,13 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MY CV</title>
+    <style>
+        body {
+            background-size: 100%;
+            background-color: beige;
+            align-content: center;
+        }
+
+        h1,
+        h2,
+        h4 {
+            text-align: left;
+            color: cadetblue;
+        }
+
+        p {
+            font-style: oblique;
+            font-family: Courier;
+        }
+
+        [type=text]{
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            resize: vertical;
+        }
+       
+      textarea{
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            height: 200px;
+        
+        }
+
+        [type=email] {
+            width: 40%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            resize: vertical;
+        }
+
+        input[type=submit],
+        [type=reset] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        [type=submit]:hover{
+            background-color: #e2980e;
+        }
+        [type=reset]:hover{
+            background-color: #e2980e;
+        }
+
+        .container {
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .tit{
+            margin-bottom: -10px;
+            width: 60%;
+        }
+        .btn{
+            margin-left: 20%;
+        }
+    </style>
 </head>
 
 <body>
     <h1>AYOYINKA AKOMOLAFE</h1>
-    <p>+2348062400847|E-mail:akomolafeayoyinka@gmail.com|30 ayo-alabi street okeira ogba Lagos</p>
+    <p>+2348062400847 | E-mail:akomolafeayoyinka@gmail.com | 30 ayo-alabi street okeira ogba Lagos</p>
     <h2>CAREER OBJECTIVE
         <hr>
     </h2>
@@ -40,7 +125,7 @@
         <li>Was in-charge of the school ICT/E-learning.</li>
     </ul>
     <p><strong>Industrial Training
-            Student</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May
+            Student</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May
         2016-October 2016</p>
     <h4>COMPUTER RESOURCE CENTER, Akure, Ondo, Nigeria</h4>
     <ul>
@@ -59,7 +144,31 @@
     <h2>REFERENCES
         <hr>
     </h2>
-    REFEREES: Available on request
+    REFEREES: Available on request<br>
+    <hr>
+
+    <h2>CONTACT</h2>
+    <div class="container">
+        <form>
+            <label for="cf_name"> Full Name</label><br>
+            <input type="text" id="cf_name" name='fullname' minlength="4" required><br>
+
+            <label for="cf_email"> E-mail</label><br>
+            <input type="email" id='cf_email' name="email" required><br>
+
+            <label for="cf_message"> Message</label><br>
+            <input type="text" class="tit" id="cf_title" name="title" placeholder="Title" required><br>
+            <textarea id="cf_message" name="message" minlength="20" placeholder="Write your message.."
+             required></textarea><br>
+            <div class="btn">
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
 </body>
+<script>
+    
+</script>
 
 </html>
