@@ -11,7 +11,8 @@ body {
     background: #F2F2F2;
     color: #323232;
     background-size: 100%;
-    align-content: center;
+    margin-left:15%;
+    margin-right:15%;
 }
 .container {
     max-width: 960px;
@@ -28,18 +29,21 @@ section {
     padding: 24px 0;
     border-bottom: 1px solid lightgrey;
   }
+
   .section-title {
     font-weight: bold;
     font-size: 18px;
   }
- 
+
+ section:last-child {
+  border-bottom: none;
+}
 
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
 
-}
 .job {
     padding-bottom: 24px;
     margin-bottom: 24px;
@@ -50,7 +54,7 @@ h1 {
     justify-content: space-between;
     margin-bottom: 20px;
     font-size: 18px;
-    color:rgb(12, 9, 238);
+    color:rgb(238, 41, 41);
   }
   .job-company {
   font-weight: bold;
@@ -90,12 +94,17 @@ select {
     padding: 0.25em 0.5em;
     width: 100%;
 }
-[type="checkbox"],
-[type="radio"] {
+[type="checkbox"]{
     margin-bottom: 0.5em;
     width: auto;
 }
-
+.no-media {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid lightgrey;
+  }
 .button {
     background-color: #0088cc;
     border: 1px solid #0088cc;
@@ -110,6 +119,7 @@ select {
     padding: 0.5em 0.6875em;
     width: auto;
 }
+
 
 .button:active,
 .button:focus,
