@@ -6,88 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MY CV</title>
-    <style>
-        body {
-            background-size: 100%;
-            background-color: beige;
-            align-content: center;
-        }
-
-        h1,
-        h2,
-        h4 {
-            text-align: left;
-            color: cadetblue;
-        }
-
-        p {
-            font-style: oblique;
-            font-family: Courier;
-        }
-
-        [type=text]{
-            width: 50%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 6px;
-            resize: vertical;
-        }
-       
-      textarea{
-            width: 60%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 6px;
-            height: 200px;
-        
-        }
-
-        [type=email] {
-            width: 40%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 6px;
-            resize: vertical;
-        }
-
-        input[type=submit],
-        [type=reset] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        [type=submit]:hover{
-            background-color: #e2980e;
-        }
-        [type=reset]:hover{
-            background-color: #e2980e;
-        }
-
-        .container {
-            border-radius: 4px;
-            padding: 5px;
-        }
-        .tit{
-            margin-bottom: -10px;
-            width: 60%;
-        }
-        .btn{
-            margin-left: 20%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -98,9 +18,8 @@
     </h2>
     <p>To pursue excellence and maintain a perfect blend of professionalism and integrity, in a manner, that will ensure
         the attainment of the set objectives. </p>
-    <h2>SKILLS
-        <hr>
-    </h2>
+        <section>
+    <div class="section-title">SKILLS</div>
     <ul>
         <li>Evaluate options and present solutions.</li>
         <li>Perform well in team work.</li>
@@ -110,65 +29,92 @@
         <li>Mobile application development: using Flutter.</li>
         <li>Highly time conscious.</li>
     </ul>
-    <h2>WORK EXPERIENCE
-        <hr>
-    </h2>
-    <p><strong>Computer Science
-            Teacher</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;November
-        2018-current</p>
-    <h4>NATIONAL YOUTH SERVICE CORPS, Port Harcourt, Rivers, Nigeria</h4>
-    <ul>
+        </section>
+
+        <section>
+    <div class="section-title">WORK EXPERIENCE</div>
+    <div>
+        <div class="job">
+            <div class="job-title-container">
+            <div>
+                <div class="job-company">NATIONAL YOUTH SERVICE CORPS, Port Harcourt, Rivers, Nigeria</div>
+                <div class="job-title">Computer Science Teacher</div>
+        </div>
+        <div>October 2018 - Present</div>
+        </div>
+        
+    <p><ul>
         <li>Communicated expectations and curriculum requirements to reinforce classroom goals.</li>
         <li>Created and adopted lesson plans and classroom work to meet student’s individual needs mostly in practical
             work.</li>
         <li>Established and maintained relationship with students, staff and parents.</li>
         <li>Was in-charge of the school ICT/E-learning.</li>
-    </ul>
-    <p><strong>Industrial Training
-            Student</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May
-        2016-October 2016</p>
-    <h4>COMPUTER RESOURCE CENTER, Akure, Ondo, Nigeria</h4>
-    <ul>
+    </ul></p>
+        
+    <div>
+        <div class="job">
+            <div class="job-title-container">
+            <div>
+                    <div class="job-company">COMPUTER RESOURCE CENTER, Akure, Ondo, Nigeria</div>
+                    <div class="job-title">Industrial Training Student</div>
+                    </div>
+            <div>May 2016-October 2016</div>
+            <div>
+
+        </p><ul>
         <li>Worked in the Network Engineering sector of the company, I was able to determine computer and network system
             needs of departments in the school to ensure they were properly setup.</li>
         <li>Participated in various network installation projects in the company, such as installing a point-to-point
             network connection.</li>
-    </ul>
-    <h2>EDUCATION
-        <hr>
-    </h2>
-    Bachelor of Science: Computer
-    Science.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;April
-    2018<br>
-    Adekunle Ajasin University, Akungba, Ondo, Nigeria
-    <h2>REFERENCES
-        <hr>
-    </h2>
-    REFEREES: Available on request<br>
-    <hr>
+    </ul></p>
+    </div>
+</div>
+</section>
 
+<section>
+<div class="section-title">EDUCATION</div>
+<div>
+<div class="job">
+        <div class="job-title-container">
+        <div>
+                <div class="job-company">Adekunle Ajasin University, Akungba, Ondo, Nigeria</div>
+                <div class="job-title">B.Sc. ComputerScience</div>
+        <div>April 2014-September 2018</div>
+</section>
+
+<section>
+        <div class="section-title">REFERENCES</div>
+         <div>REFEREES: Available on request</div>
+        </section>
+
+<section class="no-media" id = "contact-me">
     <h2>CONTACT</h2>
-    <div class="container">
-        <form>
+        <form class="validate" method="POST" action="https://formspree.io/akomolafeayoyinka@gmail.com">
+            <label for="cf_title">Title</label>
+            <select id="cf_title" name="title" required>
+                    <option disabled selected></option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Ms">Miss</option>
+            </select>
+            <div>
             <label for="cf_name"> Full Name</label><br>
             <input type="text" id="cf_name" name='fullname' minlength="4" required><br>
-
+</div>
+<div>
             <label for="cf_email"> E-mail</label><br>
             <input type="email" id='cf_email' name="email" required><br>
-
+</div>
+<div>
             <label for="cf_message"> Message</label><br>
-            <input type="text" class="tit" id="cf_title" name="title" placeholder="Title" required><br>
-            <textarea id="cf_message" name="message" minlength="20" placeholder="Write your message.."
-             required></textarea><br>
+            <textarea id="cf_message" name="message" minlength="20" placeholder="Write your message.." required></textarea><br>
             <div class="btn">
-            <input type="submit" value="Send">
-            <input type="reset" value="Clear">
+            <input type="submit" class="button" value="Send">
+            <input type="reset" value="Clear" class="button">
             </div>
         </form>
     </div>
+    </section>
+</div>
 </body>
-<script>
-    
-</script>
-
 </html>
